@@ -1,0 +1,225 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height:60px;
+}
+
+/* Navigation navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+/* Navigation Bar: logo and image */
+#logo{
+    margin:15px 35px;
+}
+#logo img{
+    height: 50px;
+    margin: 10px 30px;
+}
+
+/* Navigation bar: List styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhaina 2', cursive;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    border-radius: 20px;
+    padding:3px 30px;
+}
+#navbar ul li a:hover{
+    color: grey;
+    background-color: white;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+    justify-content: center;
+    align-items: center;
+    height: 570px;
+}
+#home::before {
+    content: "";
+    background:url('../bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 670px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.93;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Bhaina 2', cursive;
+
+}
+#home p{
+    color: white;
+    font-size: 1.3rem;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; 
+    
+}
+/* services section */
+#services{
+    display: flex;
+    margin: 30px 10px;
+}
+#services .box{
+   border: 2px solid rgb(6, 243, 25);
+   padding: 22px;
+   margin: 5px;
+   border-radius: 50px;
+   background: rgb(243, 244, 245);
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;  
+    border-radius: 50px;    
+}
+#services .box p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+/* utility classes */
+.h-primary{
+    font-size: 3.5rem;
+    padding: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.btn{
+    padding: 5px 20px;
+    border: 3px solid grey;
+    color: white;
+    background-color: rgb(202, 148, 77);
+    border-radius: 15px;
+    margin: 15px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: cursive;
+}
+.btn:hover{
+    color: grey;
+    background-color: rgb(247, 246, 242);
+    
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 2px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.center  {
+    text-align: center;   
+}
+/* client section */
+#client-section{
+    position: relative;
+    height: 350px;
+    /* border: 2px solid red; */
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 170px;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 170px;
+}
+/* #client-item{
+    padding: 34px;
+} */
+/* Contact section */
+#contact{
+    position: relative;
+    /* padding: 50px; */
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../contact1.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+#contact-box form{
+    width: 30%;
+}
+#contact-box label{
+    font-size: 1.1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 0.2rem;
+  border-radius: 15px;
+  font-size: 1rem;
+}
+.btn1{
+    color: rgb(29, 20, 5);
+    background-color:white;
+    display: block;
+    margin: auto;
+    width: 100px;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.btn1:hover{
+    background-color: grey;
+
+}
+footer{
+    color: wheat;
+    background-color: black;
+    padding: 20px;
+}
